@@ -26,10 +26,9 @@ import AWSCognitoAuthPlugin
                                     return
                                 }
                 print("session id is \(sessionId)")
-                let faceLivenessController = FaceLiveDetectionController()
+                let faceLivenessController = FaceLiveController()
                 faceLivenessController.sessionId = sessionId
                 faceLivenessController.flutterResult = result
-                faceLivenessController.isModalInPresentation = true
                 controller.present(faceLivenessController,
                                                                 animated: true,
                                                                 completion: nil)
