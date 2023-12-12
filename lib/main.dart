@@ -75,6 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> start() async {
     try {
+      // pass session id here
       var result = await startLiveVerification("de04226a-d96e-4c5a-b0dc-6ceeb4966b8f");
       print(result);
     } catch(e) {
