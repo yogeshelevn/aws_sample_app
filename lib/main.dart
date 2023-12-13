@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FilledButton(onPressed: () {
-
+              start();
             }, child: Text("Start live Verification"))
           ],
         ),
